@@ -29,7 +29,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist/angular-github-actions
-          publish_branch: release
+          publish_branch: main
           enable_jekyll: true
 
 #Credits too: https://rodrigokamada.medium.com/hosting-an-angular-application-on-github-pages-using-github-actions-da072698b8b9
