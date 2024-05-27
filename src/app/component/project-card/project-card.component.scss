@@ -1,0 +1,45 @@
+@import '../../../variables';
+
+.project {
+  padding: 20px;
+  border-radius: 5px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  width: 150px;
+  height: 200px;
+
+  flex: 1;
+
+  background-size: cover;
+  background-position: center;
+
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform: scale(1);
+  filter: grayscale(0%);
+
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.9);
+    filter: grayscale(100%);
+  }
+
+  .project-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $white-color;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      color: $primary-color;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    }
+  }
+}
