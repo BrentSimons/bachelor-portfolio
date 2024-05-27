@@ -5,9 +5,7 @@ import {AboutMeComponent} from "./section/about-me/about-me.component";
 import {EducationComponent} from "./section/education/education.component";
 import {SkillsComponent} from "./section/skills/skills.component";
 import {ProjectCardComponent} from "./component/project-card/project-card.component";
-import {projectCards} from "./data/project-cards";
 import {NgForOf} from "@angular/common";
-import {ProjectCard} from "./data/models/project-card.model";
 import {ProjectsComponent} from "./section/projects/projects.component";
 
 @Component({
@@ -18,7 +16,4 @@ import {ProjectsComponent} from "./section/projects/projects.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio-brent-simons';
-
-  projectCards: ProjectCard[] = projectCards;
 }

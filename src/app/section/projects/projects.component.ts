@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import {projectCards} from "../../data/project-cards";
+import {projects} from "../../data/projects";
 import {NgForOf} from "@angular/common";
 import {ProjectCardComponent} from "../../component/project-card/project-card.component";
+import {Project} from "../../data/models/project-card.model";
 
 @Component({
   selector: 'app-projects',
@@ -14,6 +15,5 @@ import {ProjectCardComponent} from "../../component/project-card/project-card.co
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-
-    protected readonly projectCards = projectCards;
+    protected readonly projects: Project[] = projects;
 }
