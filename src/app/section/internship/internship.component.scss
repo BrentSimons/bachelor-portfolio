@@ -1,0 +1,78 @@
+@use 'sass:color';
+@import '../../../variables';
+
+.internship {
+  padding: 50px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .internship-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      gap: 20px;
+
+      .internship-left {
+        flex: 0 0 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+
+      .internship-right {
+        flex: 0 0 60%;
+        text-align: left;
+
+        h5 {
+          font-size: 1.3rem;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-bottom: 20px;
+        }
+
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+
+          button {
+            flex: 1;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: $light-grey;
+            border: $light-grey solid 3px;
+            border-radius: 5px;
+            color: $primary-color;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: darken($light-grey, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

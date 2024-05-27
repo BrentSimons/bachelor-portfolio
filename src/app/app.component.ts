@@ -7,11 +7,12 @@ import {SkillsComponent} from "./section/skills/skills.component";
 import {ProjectCardComponent} from "./component/project-card/project-card.component";
 import {NgForOf} from "@angular/common";
 import {ProjectsComponent} from "./section/projects/projects.component";
+import {InternshipComponent} from "./section/internship/internship.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeroComponent, AboutMeComponent, EducationComponent, SkillsComponent, ProjectCardComponent, NgForOf, ProjectsComponent],
+  imports: [RouterOutlet, HeroComponent, AboutMeComponent, EducationComponent, SkillsComponent, ProjectCardComponent, NgForOf, ProjectsComponent, InternshipComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
