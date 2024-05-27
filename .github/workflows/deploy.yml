@@ -39,7 +39,7 @@ jobs: # Single deploy job since we're just deploying
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run build:prod
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
