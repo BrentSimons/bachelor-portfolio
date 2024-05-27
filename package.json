@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=https://brentsimons.github.io/bachelor-portfolio/",
+    "deploy": "ng deploy --base-href=https://brentsimons.github.io/bachelor-portfolio/"
   },
   "private": true,
   "dependencies": {
