@@ -16,4 +16,8 @@ import {Project} from "../../data/models/project-card.model";
 })
 export class ProjectsComponent {
     protected readonly projects: Project[] = projects;
+
+    protected moreThanFiveProjects(): boolean {
+        return this.projects.length >= 5;
+    }
 }
