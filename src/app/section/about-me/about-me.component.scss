@@ -1,5 +1,10 @@
 @import '../../../variables';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .about-me {
   padding: 50px 20px;
   display: flex;
@@ -25,11 +30,41 @@
         margin-bottom: 20px;
       }
 
-      p {
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      p, ul {
+        text-align: justify;
+        margin-bottom: 5px;
         font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: 15px;
+      }
+
+      ul {
+        li {
+          margin-left: 22px;
+        }
+      }
+
+      ul {
+        margin-bottom: 15px !important;
+      }
+
+      .button-primary {
+        padding: 10px 20px !important;
+      }
+
+      .practical-info {
+        margin-top: 20px;
+
+        .button-box {
+          margin-top: 1.5rem;
+        }
+
       }
     }
   }
 }
+
