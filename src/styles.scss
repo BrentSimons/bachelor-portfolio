@@ -8,27 +8,11 @@ body {
   padding: 0;
 }
 
-#fake-footer{
-  margin-bottom: 40rem;
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
-
-//a {
-//  color: $primary-color;
-//  text-decoration: none;
-//
-//  &:hover {
-//    text-decoration: underline;
-//  }
-//}
-
-//button {
-//  background-color: $primary-color;
-//  color: $background-color;
-//  border: none;
-//  padding: 10px 20px;
-//  cursor: pointer;
-//
-//  &:hover {
-//    background-color: darken($primary-color, 10%);
-//  }
-//}
