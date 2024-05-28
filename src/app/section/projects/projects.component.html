@@ -2,26 +2,38 @@
   <div class="container">
     <h2>Projects</h2>
     <p>Check out some of my recent projects below:</p>
+
+    <div class="filter-container">
+      <button
+        *ngFor="let category of categories"
+        (click)="setCategoryFilter(category)"
+        [ngClass]="{'active': categoryFilter === category}"
+      >
+        {{ category }}
+      </button>
+      <button
+        (click)="setCategoryFilter('')"
+        [ngClass]="{'active': categoryFilter === ''}"
+      >
+        All
+      </button>
+    </div>
+
     <div class="grid-container">
-      @if (moreThanFiveProjects()) {
-        <div
-          class="project-grid">
-          <div
-            *ngFor="let project of projects; let i = index">
-
+      <div *ngIf="moreThanFiveProjects(); else lessThanFive">
+        <div class="project-grid">
+          <div *ngFor="let project of filteredProjects; let i = index">
             <app-project-card [project]="project"></app-project-card>
           </div>
         </div>
-      } @else {
-        <div
-          class="project-grid-less-than-5">
-          <div
-            *ngFor="let project of projects; let i = index">
-
+      </div>
+      <ng-template #lessThanFive>
+        <div class="project-grid-less-than-5">
+          <div *ngFor="let project of filteredProjects; let i = index">
             <app-project-card [project]="project"></app-project-card>
           </div>
         </div>
-      }
+      </ng-template>
     </div>
   </div>
 </section>

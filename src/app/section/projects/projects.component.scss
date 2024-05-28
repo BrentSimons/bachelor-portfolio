@@ -15,6 +15,31 @@
     margin-bottom: 40px;
   }
 
+  .filter-container {
+    max-width: 55%;
+    margin: 0 auto 20px;
+
+    button {
+      background: none;
+      border: 2px solid $primary-color;
+      color: $primary-color;
+      padding: 10px 20px;
+      margin: 0 10px 10px 0;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+
+      &.active {
+        background: $primary-color;
+        color: $white-color;
+      }
+
+      &:hover {
+        background: lighten($primary-color, 10%);
+        color: $white-color;
+      }
+    }
+  }
+
   .grid-container {
     max-width: 55%;
     margin: 0 auto;
