@@ -16,6 +16,14 @@ export const projects: Project[] = [{
   when: "year2",
   description: "Tijdens het 2e jaar moesten we voor een opdrachtgever een training geven, ik heb hiervoor mijn oude middelbare school gecontacteerd en een training-sessie georganiseerd over OOP in C#. Ook hebben we hiervoor zelf een cursus, oefeningen en presentatie voor gemaakt.",
   mainImageLocation: "./projects/training/training.png"
+}, {
+  id: "20eeuw",
+  title: "Website 20e Eeuw",
+  subtitle: "Soloproject: Website over de 20e eeuw, gemaakt in Bootstrap, HTML, JS",
+  category: 'Front-end',
+  when: "year1",
+  description: "Tijdens het 1e jaar hebben we een soloproject gemaakt in Bootstrap, HTML en JS. Ik heb een website gemaakt over de 20e eeuw, waarbij ik mij vooral heb gefocust op het design van de website.",
+  mainImageLocation: "./projects/20e-eeuw/home-page.jpg"
 }]
 
 
