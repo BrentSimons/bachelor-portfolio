@@ -1,10 +1,11 @@
 @import '../../../variables';
 
-$hero-background-image: url('https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg');
+$hero-background-image: url('../../../../public/background/hero.jpg');
 $hero-height: 100vh;
 
 .hero {
-  background: $primary-color $hero-background-image no-repeat center center;
+  position: relative;
+  background: $hero-background-image no-repeat center center;
   background-size: cover;
   color: $white-color;
   height: $hero-height;
@@ -12,14 +13,28 @@ $hero-height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($primary-color, 0.7); // Adjust the alpha channel as needed
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
   .hero-content {
+    position: relative; // This ensures the content is above the pseudo-element
     max-width: 800px;
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
     }
 
     p {
@@ -40,4 +55,41 @@ $hero-height: 100vh;
       }
     }
   }
+
+  .hero-content-bottom {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+
+    a {
+      cursor: pointer;
+    }
+
+    a span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 46px;
+      height: 46px;
+      margin-left: -23px;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      box-sizing: border-box;
+    }
+    a span::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin: -12px 0 0 -8px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-sizing: border-box;
+    }
+  }
 }
+

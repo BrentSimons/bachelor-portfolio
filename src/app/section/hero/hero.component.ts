@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-
+  protected scrollToAboutMe(): void {
+    const nextHeader = document.querySelector('#about-me');
+    nextHeader?.scrollIntoView({behavior: 'smooth'});
+  }
 }

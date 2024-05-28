@@ -21,7 +21,7 @@ a {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: $light-grey;
-  border: $light-grey solid 3px;
+  border: lighten($primary-color, 40%) solid 3px;
   border-radius: 5px;
   color: $primary-color;
   cursor: pointer;
