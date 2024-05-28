@@ -16,3 +16,18 @@ a {
     text-decoration: underline;
   }
 }
+
+.button-primary {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: $light-grey;
+  border: $light-grey solid 3px;
+  border-radius: 5px;
+  color: $primary-color;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($light-grey, 10%);
+  }
+}
