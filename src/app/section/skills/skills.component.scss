@@ -38,7 +38,7 @@
       }
 
       .progress {
-        background-color: $grey;
+        background-color: lighten($grey, 13%);
         border-radius: 5px;
         height: 20px;
         margin-bottom: 5px;
