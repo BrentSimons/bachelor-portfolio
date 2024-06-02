@@ -1,0 +1,23 @@
+@import '../../../variables';
+
+.skill {
+  margin-bottom: 20px;
+
+  .progress-bar-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .progress {
+    background-color: lighten($grey, 13%);
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .progress-bar {
+    background-color: $primary-color;
+    border-radius: 5px;
+    height: 100%;
+  }
+}
