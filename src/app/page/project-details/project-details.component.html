@@ -1,6 +1,83 @@
-<div class="project-details-container">
-  <h1>Project Details</h1>
-  <button (click)="returnToHome()">Return Home</button>
+<div class="project-details">
+  <h1 class="project-title">{{ project.title }}</h1>
+
+  <div class="card">
+    <div class="split-container">
+    <div class="left">
+      <div class="image-box">
+        <img [src]="project.mainImageLocation" alt="{{ project.title }} Main Image" *ngIf="project.mainImageLocation">
+      </div>
+    </div>
+    <div class="right">
+      <div>
+        <h3>Project Description</h3>
+        <p>{{ project.description }}</p>
+      </div>
+      <h3>Technologies</h3>
+      <ul>
+        <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+      </ul>
+      <h3>Category</h3>
+      <ul>
+        <li>{{ project.category }}</li>
+      </ul>
+      <div *ngIf="project.projectHostedUrl">
+        <h3>Project URL</h3>
+        <a [href]="project.projectHostedUrl" target="_blank">{{ project.projectHostedUrl }}</a>
+      </div>
+      <!--      <div *ngIf="project.teamProject.isTeamProject">-->
+      <!--        <h3>{{ project.teamProject.text?.title }}</h3>-->
+      <!--        <p><span *ngFor="let desc of project.teamProject.text?.description">{{ desc }}</span></p>-->
+      <!--      </div>-->
+    </div>
+    </div>
+  </div>
+
+  <div *ngIf="project.teamProject.isTeamProject && project.teamProject.team" class="card">
+    @if (project.teamProject.text?.imageLocation) {
+      <p>not implemented</p>
+    } @else {
+      <div class="split-container">
+        <div class="left">
+        <h2>Team Members</h2>
+        <ul class="team-list">
+          <li *ngFor="let teammate of project.teamProject.team">
+            <a target="_blank" [href]="teammate.linkedIn">{{ teammate.name }}</a>
+          </li>
+        </ul>
+        </div>
+        <div class="right"></div>
+      </div>
+    }
+  </div>
+
+  <div
+    class="card"
+    *ngFor="let section of project.textSections">
+    <div class="split-container">
+      <div class="left">
+        <div class="image-box">
+          <img [src]="section.imageLocation" alt="{{ section.title }} Image">
+        </div>
+      </div>
+      <div class="right">
+          <h3>{{ section.title }}</h3>
+          <p *ngFor="let desc of section.description">{{ desc }}</p>
+      </div>
+    </div>
+  </div>
+
+<!--  <div *ngFor="let section of project.textSections" class="card">-->
+<!--    <div class="image" *ngIf="section.imageLocation">-->
+<!--      <img [src]="section.imageLocation" alt="{{ section.title }} Image">-->
+<!--    </div>-->
+<!--    <div class="text-content">-->
+<!--      <h3>{{ section.title }}</h3>-->
+<!--      <p *ngFor="let desc of section.description">{{ desc }}</p>-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <div class="go-back">
+    <button (click)="returnToHome()">Return Home</button>
+  </div>
 </div>
-
-

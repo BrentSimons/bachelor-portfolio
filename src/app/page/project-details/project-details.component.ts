@@ -3,11 +3,16 @@ import {Project} from "../../data/models/project-card.model";
 import {ActivatedRoute, Router} from "@angular/router";
 import {projects} from "../../data/projects";
 import {take, tap} from "rxjs";
+import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-project-details',
   standalone: true,
-  imports: [],
+  imports: [
+    NgForOf,
+    NgIf,
+    NgOptimizedImage
+  ],
   templateUrl: './project-details.component.html',
   styleUrl: './project-details.component.scss'
 })
@@ -34,6 +39,8 @@ export class ProjectDetailsComponent {
     } else {
       this.project = this.projectExists;
     }
+
+    console.log(this.project)
   }
 
   protected returnToHome() {
