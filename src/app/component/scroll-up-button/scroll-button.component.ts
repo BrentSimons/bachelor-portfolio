@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-scroll-up-button',
   standalone: true,
   imports: [],
-  templateUrl: './scroll-up-button.component.html',
-  styleUrl: './scroll-up-button.component.scss'
+  templateUrl: './scroll-button.component.html',
+  styleUrl: './scroll-button.component.scss'
 })
-export class ScrollUpButtonComponent {
+export class ScrollButtonComponent {
+  @Input() scrollUp: boolean | undefined;
+
+
   protected scrollToAboutMe(): void {
     const nextHeader = document.querySelector('#about-me');
     nextHeader?.scrollIntoView({behavior: 'smooth'});

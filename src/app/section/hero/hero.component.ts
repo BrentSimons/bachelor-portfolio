@@ -1,11 +1,11 @@
-import {AfterViewInit, Component, ElementRef} from '@angular/core';
-import {ScrollUpButtonComponent} from "../../component/scroll-up-button/scroll-up-button.component";
+import {Component,} from '@angular/core';
+import {ScrollButtonComponent} from "../../component/scroll-up-button/scroll-button.component";
 
 @Component({
   selector: 'app-hero',
   standalone: true,
   imports: [
-    ScrollUpButtonComponent
+    ScrollButtonComponent
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'

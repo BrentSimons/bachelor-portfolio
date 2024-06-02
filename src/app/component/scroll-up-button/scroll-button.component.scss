@@ -26,3 +26,7 @@ a span::after {
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
+
+.upside-down {
+  transform: rotate(180deg);
+}
