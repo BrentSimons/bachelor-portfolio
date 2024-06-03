@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+  @Input() homePage: boolean = true;
+
+  constructor(private router: Router) {}
+
+
   protected scrollToAboutMe(): void {
     const nextHeader = document.querySelector('#about-me');
     nextHeader?.scrollIntoView({ behavior: 'smooth' });
@@ -31,5 +37,11 @@ export class NavbarComponent {
   protected scrollToInternship(): void {
     const nextHeader = document.querySelector('#internship');
     nextHeader?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  protected navigateHome() {
+    this.router.navigate(['']).then(_r => {
+      this.scrollToAboutMe()
+    });
   }
 }

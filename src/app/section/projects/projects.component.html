@@ -1,9 +1,9 @@
 <section class="projects" id="projects">
   <div class="container">
-    <h2>Portfolio</h2>
+    <h2 id="projects-header">Portfolio</h2>
     <p>Bekijk hieronder enkele van mijn projecten:</p>
 
-    <div class="filter-container">
+    <div class="filter-container" id="projects-filter">
       <button
         *ngFor="let category of categories"
         (click)="setCategoryFilter(category)"

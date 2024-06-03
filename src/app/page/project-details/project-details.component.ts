@@ -6,6 +6,7 @@ import { take, tap } from 'rxjs';
 import { NgForOf, NgIf, NgOptimizedImage } from '@angular/common';
 import { TextSectionWithImageComponent } from '../../component/page-project-details/text-section-with-image/text-section-with-image.component';
 import { TextSectionComponent } from '../../component/page-project-details/text-section/text-section.component';
+import { NavbarComponent } from '../../component/navbar/navbar.component';
 
 @Component({
   selector: 'app-project-details',
@@ -16,6 +17,7 @@ import { TextSectionComponent } from '../../component/page-project-details/text-
     NgOptimizedImage,
     TextSectionWithImageComponent,
     TextSectionComponent,
+    NavbarComponent
   ],
   templateUrl: './project-details.component.html',
   styleUrl: './project-details.component.scss',
@@ -52,6 +54,9 @@ export class ProjectDetailsComponent {
   }
 
   protected returnToHome() {
-    this.router.navigate(['']);
+    this.router.navigate(['']).then(_r => {
+      const nextHeader = document.querySelector('#projects-header');
+      nextHeader?.scrollIntoView({ behavior: 'instant' });
+    });
   }
 }

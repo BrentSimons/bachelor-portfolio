@@ -1,7 +1,15 @@
 <nav class="navbar-top">
-  <div class="nav-item" (click)="scrollToAboutMe()">Over mij</div>
-  <div class="nav-item" (click)="scrollToEducation()">Opleiding</div>
-  <div class="nav-item" (click)="scrollToSkills()">Vaardigheden</div>
-  <div class="nav-item" (click)="scrollToProjects()">Portfolio</div>
-  <div class="nav-item" (click)="scrollToInternship()">Stage</div>
+  <div class="nav-left">
+    <div (click)="navigateHome()" class="nav-item">Voorpagina</div>
+  </div>
+
+  <div class="nav-right">
+    @if (homePage) {
+      <div (click)="scrollToAboutMe()" class="nav-item">Over mij</div>
+      <div (click)="scrollToEducation()" class="nav-item">Opleiding</div>
+      <div (click)="scrollToSkills()" class="nav-item">Vaardigheden</div>
+      <div (click)="scrollToProjects()" class="nav-item">Portfolio</div>
+      <div (click)="scrollToInternship()" class="nav-item">Stage</div>
+    }
+  </div>
 </nav>

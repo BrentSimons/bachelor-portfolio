@@ -1,45 +1,5 @@
 @import '../../../variables';
 
-//:root {
-//  --primary-color: #27384c;
-//  --white-color: #fdfdfd;
-//}
-//:root {
-//  --primary-color: #27384c;
-//  --white-color: #fdfdfd;
-//}
-//
-//.project-details-container {
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
-//  min-height: calc(95vh - #{$footer-height});;
-//  padding: 20px;
-//  text-align: center;
-//  background-color: $white-color;
-//
-//  h1 {
-//    font-size: 2.5rem;
-//    margin-bottom: 20px;
-//    animation: grow 1s ease-in-out;
-//    color: $primary-color;
-//  }
-//
-
-//}
-//
-//@keyframes grow {
-//  from {
-//    transform: scale(0.5);
-//    opacity: 0.5;
-//  }
-//  to {
-//    transform: scale(1);
-//    opacity: 1;
-//  }
-//}
-
 img {
   border-radius: 10px;
 }
@@ -144,9 +104,25 @@ img {
 
 .project-title {
   text-align: center;
+
   margin-bottom: 30px;
-  font-size: 2.5em;
+  margin-top: 40px;
+
+  font-size: 3em;
   font-weight: bold;
+
+  animation: grow 1s ease-in-out;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .go-back {
