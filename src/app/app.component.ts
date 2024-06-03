@@ -4,7 +4,7 @@ import { HeroComponent } from './section/hero/hero.component';
 import { AboutMeComponent } from './section/about-me/about-me.component';
 import { EducationComponent } from './section/education/education.component';
 import { SkillsComponent } from './section/skills/skills.component';
-import { ProjectCardComponent } from './component/project-card/project-card.component';
+import { ProjectCardComponent } from './component/page-home/project-card/project-card.component';
 import { NgForOf } from '@angular/common';
 import { ProjectsComponent } from './section/projects/projects.component';
 import { InternshipComponent } from './section/internship/internship.component';

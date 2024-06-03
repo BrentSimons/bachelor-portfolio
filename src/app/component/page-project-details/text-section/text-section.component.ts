@@ -1,7 +1,7 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { NgForOf, NgOptimizedImage } from '@angular/common';
-import { ProjectTextSection } from '../../data/models/project-card.model';
-import { projects } from '../../data/projects';
+import { ProjectTextSection } from '../../../data/models/project-card.model';
+import { projects } from '../../../data/projects';
 
 @Component({
   selector: 'app-text-section',

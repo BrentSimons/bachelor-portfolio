@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ScrollButtonComponent } from '../../component/scroll-up-button/scroll-button.component';
+import { ScrollButtonComponent } from '../../component/page-project-details/scroll-up-button/scroll-button.component';
 
 @Component({
   selector: 'app-hero',

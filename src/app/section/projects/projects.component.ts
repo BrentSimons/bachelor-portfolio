@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { projects } from '../../data/projects';
 import { NgClass, NgForOf, NgIf } from '@angular/common';
-import { ProjectCardComponent } from '../../component/project-card/project-card.component';
+import { ProjectCardComponent } from '../../component/page-home/project-card/project-card.component';
 import { Project } from '../../data/models/project-card.model';
 import { Category } from '../../data/models/category-model';
 

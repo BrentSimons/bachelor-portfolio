@@ -4,7 +4,7 @@ import {
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import { ProjectTextSection } from '../../data/models/project-card.model';
+import { ProjectTextSection } from '../../../data/models/project-card.model';
 import { NgForOf, NgOptimizedImage } from '@angular/common';
 
 @Component({

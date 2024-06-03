@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Skill } from '../../data/models/skill-model';
 import { Skills } from '../../data/skills';
-import { SkillBarComponent } from '../../component/skill-bar/skill-bar.component';
+import { SkillBarComponent } from '../../component/page-home/skill-bar/skill-bar.component';
 import { NgForOf } from '@angular/common';
 
 @Component({

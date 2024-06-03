@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Project } from '../../data/models/project-card.model';
+import { Project } from '../../../data/models/project-card.model';
 import { Router } from '@angular/router';
 
 @Component({

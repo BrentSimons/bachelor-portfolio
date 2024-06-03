@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Skill } from '../../data/models/skill-model';
+import { Skill } from '../../../data/models/skill-model';
 
 @Component({
   selector: 'app-skill-bar',
