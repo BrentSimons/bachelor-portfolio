@@ -10,6 +10,17 @@
     "deploy": "ng deploy --base-href=/bachelor-portfolio/",
     "format": "prettier --write 'src/**/*.{ts,html,css,scss}'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,html,css,scss}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.0.0",
@@ -31,12 +42,14 @@
     "@types/jasmine": "~5.1.0",
     "@types/jest": "^29.5.12",
     "angular-cli-ghpages": "^2.0.0",
+    "husky": "^9.0.11",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.2.5",
     "prettier": "^3.3.0",
     "sass": "^1.77.2",
     "typescript": "~5.4.2"
