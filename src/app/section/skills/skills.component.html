@@ -4,10 +4,16 @@
     <p>Dit zijn mijn vaardigheden:</p>
     <div class="skills-row">
       <div class="skills-column">
-        <app-skill-bar *ngFor="let skill of columnOne" [skill]="skill"></app-skill-bar>
+        <app-skill-bar
+          *ngFor="let skill of columnOne"
+          [skill]="skill"
+        ></app-skill-bar>
       </div>
       <div class="skills-column">
-        <app-skill-bar *ngFor="let skill of columnTwo" [skill]="skill"></app-skill-bar>
+        <app-skill-bar
+          *ngFor="let skill of columnTwo"
+          [skill]="skill"
+        ></app-skill-bar>
       </div>
     </div>
   </div>

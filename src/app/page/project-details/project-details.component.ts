@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import {Project} from "../../data/models/project-card.model";
-import {ActivatedRoute, Router} from "@angular/router";
-import {projects} from "../../data/projects";
-import {take, tap} from "rxjs";
-import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
-import {TextSectionWithImageComponent} from "../../component/text-section-with-image/text-section-with-image.component";
-import {TextSectionComponent} from "../../component/text-section/text-section.component";
+import { Project } from '../../data/models/project-card.model';
+import { ActivatedRoute, Router } from '@angular/router';
+import { projects } from '../../data/projects';
+import { take, tap } from 'rxjs';
+import { NgForOf, NgIf, NgOptimizedImage } from '@angular/common';
+import { TextSectionWithImageComponent } from '../../component/text-section-with-image/text-section-with-image.component';
+import { TextSectionComponent } from '../../component/text-section/text-section.component';
 
 @Component({
   selector: 'app-project-details',
@@ -15,10 +15,10 @@ import {TextSectionComponent} from "../../component/text-section/text-section.co
     NgIf,
     NgOptimizedImage,
     TextSectionWithImageComponent,
-    TextSectionComponent
+    TextSectionComponent,
   ],
   templateUrl: './project-details.component.html',
-  styleUrl: './project-details.component.scss'
+  styleUrl: './project-details.component.scss',
 })
 export class ProjectDetailsComponent {
   private id: string | undefined;
@@ -26,15 +26,19 @@ export class ProjectDetailsComponent {
 
   protected project: Project = {} as Project;
 
-  constructor(private route: ActivatedRoute,
-  private router: Router) {
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+  ) {
     this.route.params
       .pipe(
-        tap(params => {
+        tap((params) => {
           this.id = params['id'];
-          this.projectExists = projects.find(project => project.id === this.id);
+          this.projectExists = projects.find(
+            (project) => project.id === this.id,
+          );
         }),
-        take(1)
+        take(1),
       )
       .subscribe();
 
@@ -44,7 +48,7 @@ export class ProjectDetailsComponent {
       this.project = this.projectExists;
     }
 
-    console.log(this.project)
+    console.log(this.project);
   }
 
   protected returnToHome() {

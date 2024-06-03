@@ -7,13 +7,13 @@
       <button
         *ngFor="let category of categories"
         (click)="setCategoryFilter(category)"
-        [ngClass]="{'active': categoryFilter === category}"
+        [ngClass]="{ active: categoryFilter === category }"
       >
         {{ category }}
       </button>
       <button
         (click)="setCategoryFilter('')"
-        [ngClass]="{'active': categoryFilter === ''}"
+        [ngClass]="{ active: categoryFilter === '' }"
       >
         All
       </button>

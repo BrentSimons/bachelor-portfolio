@@ -14,7 +14,9 @@
   background-size: cover;
   background-position: center;
 
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
   transform: scale(1);
   filter: grayscale(0%);
 

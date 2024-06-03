@@ -12,7 +12,6 @@
   }
 }
 
-
 footer {
   height: $footer-height;
   background-color: $primary-color;
@@ -41,7 +40,8 @@ footer {
           font-size: 1.2rem;
         }
 
-        p, a {
+        p,
+        a {
           font-size: 1rem;
           color: $white-color;
           text-decoration: none;
@@ -52,8 +52,8 @@ footer {
           }
         }
 
-        h3, p {
-
+        h3,
+        p {
           padding: 5px;
           margin: 5px;
         }
@@ -78,7 +78,7 @@ footer {
       text-align: center;
       margin-top: 10px;
 
-      P{
+      P {
         margin-top: 5px;
       }
       p:last-child {

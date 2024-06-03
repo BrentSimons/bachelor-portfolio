@@ -1,2 +1,1 @@
-export type Category = 'Front-end' | 'Back-end' | 'AI' | 'Other'
-
+export type Category = 'Front-end' | 'Back-end' | 'AI' | 'Other';

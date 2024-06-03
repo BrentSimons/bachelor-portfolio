@@ -1,19 +1,18 @@
 <section>
   <figure (click)="dialog.showModal()">
-    <img alt="" [width]="350" [height]="350" src="{{imageLocation}}">
+    <img alt="" [width]="350" [height]="350" src="{{ imageLocation }}" />
   </figure>
   <div>
-      <h3>{{ textSection.title }}</h3>
-      <p *ngFor="let desc of textSection.description">{{ desc }}</p>
+    <h3>{{ textSection.title }}</h3>
+    <p *ngFor="let desc of textSection.description">{{ desc }}</p>
   </div>
 </section>
 
-<dialog
-  #dialog
-  (click)="dialog.close()">
+<dialog #dialog (click)="dialog.close()">
   <img
     class="dialog-image"
     fill
-    ngSrc="{{textSection.imageLocation}}"
-    alt="">
+    ngSrc="{{ textSection.imageLocation }}"
+    alt=""
+  />
 </dialog>
