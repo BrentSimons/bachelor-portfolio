@@ -7,7 +7,7 @@ export const projects: Project[] = [{
   category: 'Front-end',
   when: "year2",
   description: "Tijdens het 2e jaar hebben we een groepsproject gemaakt in Laravel. We hebben een zwemclub applicatie gemaakt, ik heb mij binnen deze applicatie vooral gefocust op het maken van de webshop, maar ook heb ik designs gemaakt en geholpen met het ERD en de back-end.",
-  mainImageLocation: "./projects/php-zwemclub/PHP_homepage.png",
+  mainImageLocation: "./projects/php-zwemclub/PHP_homepage.jpg",
   technologies: ["Laravel", "Tailwind"],
   teamProject: {
     isTeamProject: true, team: [{
@@ -29,7 +29,7 @@ export const projects: Project[] = [{
   textSections: [{
     title: "Webshop",
     description: ["Voor dit project heb ik vooral aan de webshop gewerkt, dit was de uiteindelijke realisatie."],
-    imageLocation: "./projects/php-zwemclub/Webshop.png",
+    imageLocation: "./projects/php-zwemclub/Webshop.jpg",
   }],
   projectHostedUrl: null,
 }, {
@@ -39,7 +39,7 @@ export const projects: Project[] = [{
   category: 'Back-end',
   when: "year2",
   description: "Tijdens het 2e jaar moesten we voor een opdrachtgever een training geven, ik heb hiervoor mijn oude middelbare school gecontacteerd en een training-sessie georganiseerd over OOP in C#. Ook hebben we hiervoor zelf een cursus, oefeningen en presentatie voor gemaakt.",
-  mainImageLocation: "./projects/training/training.png",
+  mainImageLocation: "./projects/training/training.jpg",
   technologies: ["Vitepress", "Soft-skills", "Organisational-skills"],
   teamProject: {
     isTeamProject: true, team: [{
