@@ -26,20 +26,18 @@
       max-width: 60%;
 
       h2 {
-        font-size: 2rem;
         margin-bottom: 20px;
       }
 
       h3 {
         font-size: 1.2rem;
+        margin-top: 10px;
         margin-bottom: 10px;
       }
 
       p, ul {
         text-align: justify;
         margin-bottom: 5px;
-        font-size: 1rem;
-        line-height: 1.5;
       }
 
       ul {
@@ -62,7 +60,6 @@
         .button-box {
           margin-top: 1.5rem;
         }
-
       }
     }
   }

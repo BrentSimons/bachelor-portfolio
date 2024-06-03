@@ -6,8 +6,6 @@
   background-color: $alternative-background-color;
 
   h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -40,16 +38,8 @@
 
             .year {
               margin-right: 1rem;
-              font-size: 0.9rem;
+              font-size: 16px;
             }
-          }
-
-          p {
-            font-size: 16px;
-            margin-bottom: 10px;
-          }
-          .text {
-            font-size: 14px;
           }
         }
       }

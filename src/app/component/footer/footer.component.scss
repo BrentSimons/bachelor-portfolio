@@ -77,6 +77,13 @@ footer {
     .copyright {
       text-align: center;
       margin-top: 10px;
+
+      P{
+        margin-top: 5px;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

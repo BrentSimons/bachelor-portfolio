@@ -32,6 +32,33 @@ a {
   }
 }
 
+.text-small {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.text-petite {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
 .bold {
   font-weight: bold;
+}
+
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p, li, a, button {
+  font-size: 1.2rem;
+}
+
+.paragraph-card {
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px!important;
+  margin-bottom: 20px;
 }
