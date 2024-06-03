@@ -55,19 +55,14 @@ img {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 40px;
-    background: #f9f9f9;
+    background: $background-color;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
 
-    .left {
-      flex: 1;
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
+    .card-left {
       .image-box {
+        margin-right: 1rem;
         max-width: 400px;
         max-height: 1200px;
 
@@ -77,17 +72,43 @@ img {
           object-fit: cover;
         }
       }
+
+      h2 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+      }
+
+      .team-list {
+        list-style-type: none;
+        text-align: center;
+
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            color: #007bff;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
 
-    .right {
+    .card-right {
       flex: 1;
-      width: 70%;
       padding-right: 1rem;
 
       h3 {
         margin-top: 0;
         font-size: 1.5em;
-        border-bottom: 2px solid #333;
+        border-bottom: 2px solid $primary-color;
         padding-bottom: 5px;
       }
 
@@ -97,7 +118,7 @@ img {
         margin-bottom: 20px;
 
         li {
-          background: #ececec;
+          background: $light-grey;
           padding: 10px;
           margin-bottom: 5px;
           border-radius: 5px;
@@ -116,24 +137,6 @@ img {
         &:hover {
           text-decoration: underline;
         }
-      }
-    }
-  }
-}
-
-.team-list {
-  list-style-type: none;
-  padding: 0;
-
-  li {
-    margin-bottom: 10px;
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
       }
     }
   }

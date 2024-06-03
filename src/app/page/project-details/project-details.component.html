@@ -2,7 +2,7 @@
   <h1 class="project-title">{{ project.title }}</h1>
 
   <div class="card">
-    <div class="left">
+    <div class="card-left">
       <div class="image-box">
         <img
           [src]="project.mainImageLocation"
@@ -11,7 +11,7 @@
         />
       </div>
     </div>
-    <div class="right">
+    <div class="card-right">
       <div>
         <h3>Uitleg</h3>
         <p>{{ project.description }}</p>
@@ -40,7 +40,7 @@
     @if (project.teamProject.text?.imageLocation) {
       <p>not implemented</p>
     } @else {
-      <div class="left">
+      <div class="card-left">
         <h2>Team Members</h2>
         <ul class="team-list">
           <li *ngFor="let teammate of project.teamProject.team">
@@ -50,7 +50,7 @@
           </li>
         </ul>
       </div>
-      <div class="right">
+      <div class="card-right">
         <div *ngIf="project.teamProject.isTeamProject">
           <h3>{{ project.teamProject.text?.title }}</h3>
           <p>
