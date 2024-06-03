@@ -51,31 +51,17 @@
     }
   </div>
 
-  <div
-    class="card"
-    *ngFor="let section of project.textSections">
-    <div class="split-container">
-      <div class="left">
-        <div class="image-box">
-          <img [src]="section.imageLocation" alt="{{ section.title }} Image">
-        </div>
-      </div>
-      <div class="right">
-          <h3>{{ section.title }}</h3>
-          <p *ngFor="let desc of section.description">{{ desc }}</p>
-      </div>
-    </div>
+  <div *ngFor="let section of project.textSections">
+    @if (section.imageLocation) {
+      <app-text-section-with-image
+        [textSection]="section">
+      </app-text-section-with-image>
+    } @else {
+      <app-text-section
+        [textSection]="section">
+      </app-text-section>
+    }
   </div>
-
-<!--  <div *ngFor="let section of project.textSections" class="card">-->
-<!--    <div class="image" *ngIf="section.imageLocation">-->
-<!--      <img [src]="section.imageLocation" alt="{{ section.title }} Image">-->
-<!--    </div>-->
-<!--    <div class="text-content">-->
-<!--      <h3>{{ section.title }}</h3>-->
-<!--      <p *ngFor="let desc of section.description">{{ desc }}</p>-->
-<!--    </div>-->
-<!--  </div>-->
 
   <div class="go-back">
     <button (click)="returnToHome()">Return Home</button>

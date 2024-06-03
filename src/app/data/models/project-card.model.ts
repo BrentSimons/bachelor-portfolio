@@ -2,18 +2,18 @@ import {Category} from "./category-model";
 
 type When = 'year1' | 'year2' | 'year3' | 'free time';
 
-type ProjectTextSection = {
+export type ProjectTextSection = {
   title: string;
   description: string[];
   imageLocation: string | null;
 }
 
-type TeamMate = {
+export type TeamMate = {
   name: string;
   linkedIn: string;
 }
 
-type TeamProjectSection = {
+export type TeamProjectSection = {
   isTeamProject: boolean;
   team: TeamMate[] | null;
   text: ProjectTextSection | null;

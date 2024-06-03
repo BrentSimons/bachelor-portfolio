@@ -4,6 +4,8 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {projects} from "../../data/projects";
 import {take, tap} from "rxjs";
 import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
+import {TextSectionWithImageComponent} from "../../component/text-section-with-image/text-section-with-image.component";
+import {TextSectionComponent} from "../../component/text-section/text-section.component";
 
 @Component({
   selector: 'app-project-details',
@@ -11,7 +13,9 @@ import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
   imports: [
     NgForOf,
     NgIf,
-    NgOptimizedImage
+    NgOptimizedImage,
+    TextSectionWithImageComponent,
+    TextSectionComponent
   ],
   templateUrl: './project-details.component.html',
   styleUrl: './project-details.component.scss'
