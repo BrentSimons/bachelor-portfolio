@@ -31,4 +31,5 @@ export type Project = {
   teamProject: TeamProjectSection;
   textSections: ProjectTextSection[];
   projectHostedUrl: string | null;
+  githubUrl: string | null;
 };

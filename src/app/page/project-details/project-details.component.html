@@ -32,6 +32,12 @@
           project.projectHostedUrl
         }}</a>
       </div>
+      <div *ngIf="project.githubUrl">
+        <h3>Github URL</h3>
+        <a [href]="project.githubUrl" target="_blank">{{
+            project.githubUrl
+          }}</a>
+      </div>
     </div>
   </div>
 
@@ -43,7 +49,7 @@
       <p>not implemented</p>
     } @else {
       <div class="card-left">
-        <h2>Team Members</h2>
+        <h2>Teamleden</h2>
         <ul class="team-list">
           <li *ngFor="let teammate of project.teamProject.team">
             <a target="_blank" [href]="teammate.linkedIn">{{
