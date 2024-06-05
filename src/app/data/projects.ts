@@ -140,4 +140,39 @@ export const projects: Project[] = [{
   }],
   projectHostedUrl: null,
   githubUrl: 'https://github.com/BrentSimons/Project-EDE-BNB'
-}];
+}, {
+  id: 'notepaddy',
+  title: 'Notepaddy',
+  subtitle: 'Een notitie-applicatie gebouwd met C#, WPF, en Dapper',
+  when: 'year2',
+  category: 'Back-end',
+  technologies: ['C#', 'WPF', 'Dapper'],
+  description: 'Notepaddy is een eenvoudige notitie-applicatie die notities opslaat in een lokale database. Het was gebouwd met behulp van WPF en Dapper om verbinding te maken met een SQLite-database. Tijdens het ontwikkelen van de applicatie heb ik veel geleerd over C#, WPF, Dapper, en het opzetten van GitHub workflows.',
+  mainImageLocation: './projects/notepaddy/main.jpg',
+  teamProject: {
+    isTeamProject: false,
+    team: null,
+    text: null
+  },
+  textSections: [
+    {
+      title: 'Over Notepaddy',
+      description: [
+        'Notepaddy is een eenvoudige notitie-applicatie die ik heb gebouwd als case study voor DevOps. Het stelt gebruikers in staat om notities te maken, te bewerken en te verwijderen, die worden opgeslagen in een lokale SQLite-database.',
+        'Tijdens het ontwikkelen van Notepaddy heb ik veel geleerd over C#, WPF en Dapper. Het was een geweldige kans om mijn vaardigheden op het gebied van desktopapplicatieontwikkeling te verbeteren en meer te leren over het werken met databases in een desktopomgeving.'
+      ],
+      imageLocation: './projects/notepaddy/application.jpg'
+    },{
+      title: 'CI/CD Pipeline',
+      description: [
+        'Voor Notepaddy heb ik een CI/CD-pijplijn opgezet om het genereren van artifacts te automatiseren.',
+        'De CI/CD-pijplijn is geconfigureerd om bij elke commit met een Version tag de applicatie te bouwen vanaf de GitHub-repository, en een artifact te genereren.',
+        'Deze artifacts zijn beschikbaar om te downloaden op de GitHub-releases pagina van het project.',
+      ],
+      imageLocation: './projects/notepaddy/release.jpg',
+    }
+  ],
+  projectHostedUrl: null,
+  githubUrl: "https://github.com/BrentSimons/Notepaddy"
+}
+];
