@@ -59,7 +59,7 @@ export const projects: Project[] = [{
     imageLocation: './projects/training/campus-neerpelt.jpg'
   }, {
     title: 'Cursusontwikkeling',
-    description: ['Voor de online cursus maakte ik een website met Vitepress, een technologie die ik wilde leren. De cursus werd gegeven aan de leerlingen van 6I&N, en later hoorde ik dat de leraar mijn cursus ook gebruikte om OOP aan 5I&N te onderwijzen.'],
+    description: ['Voor de online cursus maakte ik een website met Vitepress, een technologie die ik wilde leren. Vitepress is een JS framework dat dient om een website te genereren op basis van MD bestanden met YML configuratie. Voor deze cursus heb ik ook Github Pages geleerd, hoe werkt dit, en hoe host ik een Vitepress applicatie hierop, Github pages is ook een service die ik later in mijn studies nog veel zou gebruiken. De cursus werd gegeven aan de leerlingen van 6I&N tijdens de training, later hoorde ik dat de leraar mijn cursus ook is blijven gebruiken beide voor de klas 6I&N om hun alle oefeningen te laten maken, en aan 5I&N om hun OOP aan te brengen..'],
     imageLocation: './projects/training/cursus.jpg'
   }, {
     title: 'Training',
