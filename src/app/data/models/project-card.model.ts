@@ -1,7 +1,5 @@
 import { Category } from './category-model';
 
-type When = 'year1' | 'year2' | 'year3' | 'free time';
-
 export type ProjectTextSection = {
   title: string;
   description: string[];
@@ -23,7 +21,7 @@ export type Project = {
   id: string;
   title: string;
   subtitle: string;
-  when: When;
+  when: number;
   category: Category;
   technologies: string[];
   description: string;
