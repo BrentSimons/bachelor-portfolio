@@ -13,7 +13,6 @@ export class NavbarComponent {
 
   constructor(private router: Router) {}
 
-
   protected scrollToAboutMe(): void {
     const nextHeader = document.querySelector('#about-me');
     nextHeader?.scrollIntoView({ behavior: 'smooth' });
@@ -39,9 +38,13 @@ export class NavbarComponent {
     nextHeader?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  private scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   protected navigateHome() {
     this.router.navigate(['']).then(_r => {
-      this.scrollToAboutMe()
+      this.scrollToTop()
     });
   }
 }

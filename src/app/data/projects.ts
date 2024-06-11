@@ -40,7 +40,7 @@ export const projects: Project[] = [{
   category: 'Back-end',
   when: 'year2',
   description: 'In het tweede jaar moesten we een training geven voor een opdrachtgever. Ik heb hiervoor mijn oude middelbare school benaderd en een trainingssessie georganiseerd over OOP in C#. We hebben een cursus, oefeningen en een presentatie voorbereid.',
-  mainImageLocation: './projects/training/training.jpg',
+  mainImageLocation: './projects/training/csharp.jpg',
   technologies: ['Vitepress', 'Soft-skills', 'Organisational-skills'],
   teamProject: {
     isTeamProject: true, team: [{
