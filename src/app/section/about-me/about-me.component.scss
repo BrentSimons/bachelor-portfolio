@@ -31,11 +31,9 @@
 
     .text {
       max-width: 80%;
-      text-align: center;
 
       @media screen and (min-width: $media-query-small){
         max-width: 70%;
-        text-align: justify;
       }
 
       @media screen and (min-width: $media-query-medium){
@@ -59,7 +57,6 @@
 
       p,
       ul {
-        text-align: justify;
         margin-bottom: 5px;
       }
 
