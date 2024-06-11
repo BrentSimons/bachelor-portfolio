@@ -174,5 +174,40 @@ export const projects: Project[] = [{
   ],
   projectHostedUrl: null,
   githubUrl: "https://github.com/BrentSimons/Notepaddy"
-}
+},
+  {
+    id: 'axxess-barometer',
+    title: 'Project 4.0',
+    subtitle: 'Axxess-barometer voor office occupancy',
+    when: 3.5,
+    category: 'Front-end',
+    technologies: ['Java', 'Spring Boot', 'Angular', 'OAuth2'],
+    description: 'Voor Project 4.0 heb ik in team de Axxess Barometer applicatie gemaakt. Deze applicatie dient om te voorspellen hoe vol het kantoor is met door gebruik van AI, zelf heb ik enkel als front/backend developer gewerkt en heb ik niet aan de AI gewerkt. De technologiën waar ik in aanraking kwam waren Angular frontend met Spring Boot backend en Auth0 authenticatie. Dit project hielp me mijn vaardigheden in zowel frontend als backend ontwikkeling verder te ontwikkelen.',
+    mainImageLocation: './projects/project4/axxess.jpg',
+    teamProject: {
+      isTeamProject: false,
+      team: null,
+      text: null
+    },
+    textSections: [
+      {
+        title: 'Project 4.0',
+        description: [
+          'In het eerste deel van dit project heb ik mij gefocust op het maken van een Spring Boot API met Auth0 authenticatie. Hierbij heb ik geleerd hoe ik vanaf nul met Spring Boot moet werken en heb ik Dockerfiles gemaakt voor deze applicatie om images van zowel de Angular- als de Spring Boot-applicatie te runnen.',
+          'Ook heb ik geleerd hoe OAuth2 werkt en me verdiept in Spring Security. Deze kennis stelde me in staat om robuuste en veilige backend services te ontwikkelen.'
+        ],
+        imageLocation: './projects/project4/spring.jpg'
+      },
+      {
+        title: 'Frontend Herschrijving',
+        description: [
+          'In het tweede deel van het project heb ik de frontend herschreven. Hiervoor heb ik enkele custom components gemaakt, zoals gauges en cards, en heb ik paginatie en filtering toegevoegd. Deze herschrijving was nodig omdat onze oorspronkelijke designs niet ver genoeg waren uitgewerkt. Om onze klant van Axxes tevreden te stellen, hebben we een herontwerp van de frontend gemaakt.',
+          'Deze ervaring heeft me geholpen mijn vaardigheden in frontend ontwikkeling te verbeteren, vooral op het gebied van gebruikerservaring en componentgebaseerde werkmethodologie.'
+        ],
+        imageLocation: './projects/project4/frontend.jpg'
+      }
+    ],
+    projectHostedUrl: null,
+    githubUrl: null
+  }
 ];
