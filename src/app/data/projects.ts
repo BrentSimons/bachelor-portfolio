@@ -209,5 +209,47 @@ export const projects: Project[] = [{
     ],
     projectHostedUrl: null,
     githubUrl: null
+  }, {
+    id: 'spring-cookingbook',
+    title: 'Spring CookingBook',
+    subtitle: 'Een API voor het beheren en delen van kookrecepten, gebouwd met Spring Boot',
+    when: 3.67,
+    category: 'Back-end',
+    technologies: ['Java', 'Spring Boot', 'Flyway', 'Swagger',],
+    description: 'CookingBook is een oefening die ik heb gemaakt tijdens een 4-daagse Spring Boot training tijdens mijn stage. Het project dient als een API voor het beheren en delen van kookrecepten. Het is gebouwd met Spring Boot en gebruikt MySQL als database. Het belangrijkste doel van het project was om te leren over Spring Boot en RESTful APIs, maar ook om te leren hoe ik schone, consistente code kan schrijven en best practices kan toepassen.',
+    mainImageLocation: './projects/spring-cookingbook/main.jpg',
+    teamProject: {
+      isTeamProject: false,
+      team: null,
+      text: null
+    },
+    textSections: [
+      {
+        title: 'Clean Code',
+        description: [
+          'Door deze training ben ik veel te weten gekomen over de opinionated benadering van Spring en de besluitvorming in projecten. Dit betrof keuzes zoals het wel of niet integreren van Lombok en het plaatsen van DTO-conversies in de service of controller.',
+          'In het algemeen markeert deze training een belangrijke verandering in mijn codeervaardigheden. De aangeleerde methoden die ik uit deze training heb genomen hebben mij geholpen om mijn code leesbaarder en onderhoudbaarder te maken.'
+        ],
+        imageLocation: './projects/spring-cookingbook/clean-code.jpg'
+      },
+      {
+        title: 'Arch Unit Tests',
+        description: [
+          'Een interessant onderwerp dat tijdens de training werd besproken, waren Arch Unit tests. Deze tests kunnen worden geschreven om te controleren of alle componenten correct zijn geplaatst en of de naming conventies binnen je project kloppen.',
+          'Tijdens de training hebben we deze technologie nooit aangeraakt, maar later heb ik deze tests ook toegevoegd aan mijn oefenproject, om ervoor te zorgen dat mijn projectarchitectuur consistent en correct is. En om meer te leren over (architecture) tests.'
+        ],
+        imageLocation: './projects/spring-cookingbook/arch-unit.jpg'
+      },
+      {
+        title: 'Andere Technologieën',
+        description: [
+          'Tijdens dit project heb ik ook enkele andere technologieën gebruikt. In het begin gebruikte ik H2 databases voor een eenvoudige projectopzet, maar later schakelde we dit over naar MySQL en leerde we Flyway gebruiken voor database-migratie.',
+          'Daarnaast heb ik tijdens de training ook geleerd om Swagger te installeren in Spring en om Spring/Javadoc te schrijven. Ook heb ik meer geleerd over Maven en hoe de verschillende commando\'s werken.'
+        ],
+        imageLocation: './projects/spring-cookingbook/spring-cookingbook-readme.jpg'
+      }
+    ],
+    projectHostedUrl: null,
+    githubUrl: 'https://github.com/BrentSimons/spring-CookingBook/'
   }
 ];
