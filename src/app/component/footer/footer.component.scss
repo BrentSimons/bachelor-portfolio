@@ -19,6 +19,7 @@ footer {
   padding: 10px 0;
 
   .container {
+    background-color: $primary-color;
     max-width: 1200px;
     margin: 0 auto; // Center the container horizontally
 
@@ -75,6 +76,9 @@ footer {
     }
 
     .copyright {
+
+      background-color: $primary-color;
+
       text-align: center;
       margin-top: 10px;
 
