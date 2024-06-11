@@ -295,5 +295,39 @@ export const projects: Project[] = [{
     ],
     projectHostedUrl: null,
     githubUrl: 'https://github.com/BrentSimons/Restaurant-Flutter'
+  }, {
+    id: 'bachelor-portfolio',
+    title: 'Bachelor Portfolio',
+    subtitle: 'Een portfolio website voor mijn bachelorproef',
+    when: 3.99,
+    category: 'Front-end',
+    technologies: ['Angular', 'SCSS', 'GitHub Pages'],
+    description: 'Voor mijn bachelorproef heb ik een portfolio website gemaakt waarin ik projecten waar ik trots op ben, mijn professioneel profiel, en mijn stage-ervaring presenteer. Deze portfolio laat zien hoe ik gedurende mijn studies geëvolueerd ben als developer.',
+    mainImageLocation: './projects/portfolio/main.jpg',
+    teamProject: {
+      isTeamProject: false,
+      team: null,
+      text: null
+    },
+    textSections: [
+      {
+        title: 'Zelfvertrouwen en Vaardigheden',
+        description: [
+          'Door het zelf maken van deze portfolio wil ik laten zien hoe ik in de afgelopen drie jaar op school ben geëvolueerd als developer. Aan het begin van mijn studie was ik bang om een dergelijk project aan te pakken, maar aan het einde van mijn studie besloot ik enthousiast om zelf de portfolio te maken in plaats van een template te gebruiken.',
+          'Deze ervaring heeft me geholpen mijn zelfvertrouwen en vaardigheden te verbeteren, en heeft me laten zien hoe ver ik ben gekomen in mijn ontwikkeling als softwareontwikkelaar.'
+        ],
+        imageLocation: './projects/portfolio/skills.jpg',
+      },
+      {
+        title: 'Dynamische Projecten',
+        description: [
+          'Om het aanmaken van projecten in mijn portfolio eenvoudiger te maken, heb ik een Project object gedefinieerd met TypeScript. Alle projecten die zichtbaar zijn op mijn bachelor-portfolio worden dynamisch gegenereerd op basis van een lijst van deze objecten.',
+          'Dit heb ik gedaan om het systeem efficiënter te maken dan bvb aparte bestanden of components voor elk project te maken. Het stelt me ook in staat om beter gebruik te maken van technologieën zoals Angular, wat resulteert in een meer onderhoudbare en uitbreidbare codebasis.'
+        ],
+        imageLocation: './projects/portfolio/projects.jpg',
+      }
+    ],
+    projectHostedUrl: null,
+    githubUrl: 'https://github.com/BrentSimons/bachelor-portfolio'
   }
 ];
