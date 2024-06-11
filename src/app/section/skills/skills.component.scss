@@ -9,14 +9,32 @@
     text-align: center;
 
     .skills-row {
+      max-width: 80%;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 30px;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .skills-column {
-      width: calc(50% - 10px); // Adjust based on the number of columns
+    @media (min-width: $media-query-small) {
+      .skills-row {
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .skills-column {
+        width: calc(50% - 10px);
+      }
+    }
+
+    @media (min-width: $media-query-large) {
+      .skills-row {
+        max-width: 100%;
+      }
     }
   }
 }

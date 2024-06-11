@@ -18,8 +18,17 @@
 
     .internship-content {
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+
+      @media screen and (max-width: $media-query-medium) {
+        flex-direction: column-reverse;
+        width: 70%;
+      }
+
+      @media screen and (min-width: $media-query-medium) {
+        justify-content: center;
+        align-items: flex-start;
+      }
+
       width: 100%;
       gap: 20px;
 
@@ -34,9 +43,6 @@
           margin-right: 10px;
           border-radius: 5px;
           margin-top: 25px;
-        }
-
-        img:nth-child(2) {
         }
       }
 
@@ -54,9 +60,19 @@
         }
 
         .buttons {
-          display: flex;
-          justify-content: space-between;
-          gap: 10px;
+
+          @media screen and (max-width: $media-query-small) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          @media screen and (min-width: $media-query-small) {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+          }
+
 
           a {
             @apply .button-primary;
