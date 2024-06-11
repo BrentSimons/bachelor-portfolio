@@ -251,5 +251,49 @@ export const projects: Project[] = [{
     ],
     projectHostedUrl: null,
     githubUrl: 'https://github.com/BrentSimons/spring-CookingBook/'
+  }, {
+    id: 'restaurant-takeout-app',
+    title: 'Restaurant Takeout App',
+    subtitle: 'Een teamproject voor een restaurant takeout applicatie met Flutter en Wikitude AR',
+    when: 3.,
+    category: 'Other',
+    technologies: ['Flutter', 'Dart', 'Wikitude', 'AR'],
+    description: 'Ik heb een restaurant takeout app gemaakt als onderdeel van de cursus Mobile Development & AR. Het project omvat de ontwikkeling van twee applicaties: één gebouwd met Flutter en de andere met Wikitude. Voor het Flutter gedeelte hebben we een applicatie gemaakt waar klanten het menu van het restaurant kunnen bekijken, maar ook een bestellingen voor takeout kunnen plaatsen en reviews kunnen plaatsen. Voor het AR gedeelte hebben we een scanbare poster gemaakt.',
+    mainImageLocation: './projects/restaurant-flutter/review-screen.jpg',
+    teamProject: {
+      isTeamProject: true,
+      team: [
+        {
+          name: 'Yarin van Raam', linkedIn: 'https://www.linkedin.com/in/yarin-v/'
+        }
+      ],
+      text: {
+        title: 'Team Project',
+        description: [
+          'Dit project was een teaminspanning waarbij ik voornamelijk werkte aan de reviewsectie van de Flutter-app en de gehele AR-app met Wikitude. Samen met mijn teamgenoot Yarin van Raam hebben we een complete takeout oplossing voor een restaurant ontwikkeld.'
+        ],
+        imageLocation: null
+      }
+    },
+    textSections: [
+      {
+        title: 'Flutter Review System',
+        description: [
+          'Voor de Flutter applicatie heb ik een reviewsysteem gemaakt waarmee gebruikers reviews kunnen achterlaten voor het restaurant en individuele gerechten. Ik implementeerde een stercomponent waarmee gebruikers 0-5 sterren kunnen selecteren.',
+          'Tijdens dit project heb ik veel geleerd over Flutter en het ontwikkelen van mobiele applicaties. Het was een waardevolle ervaring die me nieuwe vaardigheden en kennis over mobile development opleverde.'
+        ],
+        imageLocation: './projects/restaurant-flutter/review-submitted.jpg',
+      },
+      {
+        title: 'AR App',
+        description: [
+          'Ik heb voor dit project ook de AR Wikitude app gemaakt, waarmee gebruikers de gerechten van een poster kunnen scannen en hier meer informatie over kunnen zien. Hoewel Wikitude nu niet meer beschikbaar is, heb ik veel geleerd over AR-concepten tijdens dit project.',
+          'Mijn persoonlijke interesse in VR-technologie maakte dit project bijzonder boeiend voor mij. En ook heeft deze ervaring mijn begrip van AR-technologieën en hun toepassingen in de praktijk vergroot.'
+        ],
+        imageLocation: './projects/restaurant-flutter/wikitude-scan.jpg',
+      }
+    ],
+    projectHostedUrl: null,
+    githubUrl: 'https://github.com/BrentSimons/Restaurant-Flutter'
   }
 ];
